@@ -4,7 +4,7 @@ using System.Text;
 
 namespace venkat
 {
-    class DrinkMenu
+    class DrinkMenu:Menu
     {
         public string Disclaimer { get; set; }
     }
