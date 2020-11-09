@@ -18,6 +18,17 @@ namespace venkat
             drinkmenu.Name = "SuganyaDrink Menu";
             drinkmenu.Disclaimer = "if you drink juice,you will get cold";
 
+          
+            try
+            {
+                drinkmenu.AddMenuItem("Fanata", "fanta", -50);
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+            }
+
             Order venkatorder = new Order();
             foreach (var item in foodmenu.menuitems)
             {
