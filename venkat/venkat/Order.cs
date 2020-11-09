@@ -6,12 +6,16 @@ namespace venkat
 {
     class Order
     {
-        public List<MenuItem> menuitem { get; set; }
+        public Order()
+        {
+            menuitems=new List<MenuItem>();
+        }
+        public List<MenuItem> menuitems { get; set; }
         public int Total { get {
                 int m = 0;
-                for (int i = 0; i < menuitem.Count; i++)
+                for (int i = 0; i < menuitems.Count; i++)
                 {
-                    m = m + menuitem[i].Cost;
+                    m = m + menuitems[i].Cost;
                 }
                 return m;
             } }

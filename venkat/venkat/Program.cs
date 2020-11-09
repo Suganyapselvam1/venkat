@@ -21,11 +21,11 @@ namespace venkat
             Order venkatorder = new Order();
             foreach (var item in foodmenu.menuitems)
             {
-                venkatorder.menuitem.Add(item);
+                venkatorder.menuitems.Add(item);
             }
             for (int i = 0; i < drinkmenu.menuitems.Count; i++)
             {
-                venkatorder.menuitem.Add(drinkmenu.menuitems[i]);
+                venkatorder.menuitems.Add(drinkmenu.menuitems[i]);
             }
             Console.WriteLine(venkatorder.Total);
         }
